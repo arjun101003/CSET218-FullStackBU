@@ -1,0 +1,155 @@
+@import url(/assets/css/base.css);
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: transparent;
+}
+header .logo {
+  font-weight: 800;
+  font-size: 27px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav ul li {
+  position: relative;
+  padding: 5px 0;
+  margin: 0 0.6rem;
+}
+nav ul li a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 19px;
+  padding: 1rem 0;
+}
+nav ul li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 5%;
+  background-color: #30fdff;
+  transition: 0.6s;
+}
+nav ul li:hover::before {
+  width: 100%;
+}
+nav ul li:hover a {
+  color: #30fdff;
+}
+.login {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 11px 22px;
+  border-radius: 15px;
+  border: 2px solid #ffffff80;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: #ffffff;
+  border-radius: 15px;
+  z-index: -1;
+  transition: 0.6s;
+}
+.login:hover::before {
+  width: 100%;
+}
+.login:hover {
+  color: #000;
+}
+header.scrolled {
+  background-color: rgb(4, 17, 22);
+}
+#menu {
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  header {
+    background-color: #000;
+  }
+  header #menu {
+    display: block;
+  }
+  nav {
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    background: #000;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column-reverse;
+    align-items: start;
+    padding: 10% 7% 0 2%;
+    justify-content: start;
+  }
+  nav.active {
+    right: 0;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    gap: 0;
+  }
+  nav ul li:hover::before {
+    width: 0;
+  }
+  nav ul li:hover {
+    background-color: #212529;
+  }
+  nav ul li a {
+    padding-left: 1rem;
+  }
+  nav ul li:hover a {
+    color: #30fdff;
+  }
+  nav ul li {
+    border-top: 0.5px solid #545454;
+    min-width: 100%;
+    padding: 1.5rem 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+}
+@media (max-width:450px) {
+  .login {
+    margin-left: 0.5rem;
+  }
+}

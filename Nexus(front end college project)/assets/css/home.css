@@ -1,0 +1,1053 @@
+@import url(/assets/css/base.css);
+@import url(/assets/css/header.css);
+
+
+.homeContainer {
+  background-image: url(/assets/images/COD\ 6\ DRAFT.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 105vh;
+  overflow: hidden;
+  border-bottom: 1px solid #b8b5b5;
+}
+.homeContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+.homeText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1.1rem;
+  width: 39%;
+  position: absolute;
+  top: 99%;
+  left: 25%;
+  transform: translate(-25%, -99%);
+}
+.homeText h4 {
+  color: #30fdff;
+  font-family: "Cherish", Sans-serif;
+  font-size: 45px;
+  line-height: 1.2em;
+  font-weight: 500;
+}
+.homeText h2 {
+  text-align: start;
+  color: #ffffff;
+  font-family: "Montserrat Alternates", Sans-serif;
+  font-size: 82px;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+.homeText span {
+  text-align: start;
+  color: #c6c6c6;
+  font-family: "Work Sans", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+.homeText .count {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+}
+.count div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+}
+.count div:last-child {
+  padding-left: 50px;
+  border-left: 1px solid #c6c6c6;
+}
+.count div h2 {
+  color: #fff;
+  font-size: 62px;
+  font-weight: 500;
+  line-height: 1;
+  font-family: "Work Sans", Sans-serif;
+}
+.count div p {
+  color: #aeaeae;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Work Sans", Sans-serif;
+  letter-spacing: 1px;
+}
+/* home section end */
+/* about section start */
+.aboutCardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+  overflow: hidden;
+}
+.about_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  position: relative;
+}
+.about_container .bgLeftImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 260px;
+  max-height: 251px;
+  z-index: -1;
+}
+.bgLeftImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about_container .bgRightImage {
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+  width: 200px;
+  max-height: 380px;
+  z-index: -1;
+}
+.bgRightImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aboutCardContainer .aboutImage {
+  flex: 1;
+  height: 38rem;
+  margin-right: 35px;
+  position: relative;
+}
+.aboutImage .image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 80%;
+  object-fit: contain;
+}
+.aboutImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.aboutCardContainer .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 16px;
+  margin-left: 30px;
+}
+.aboutCardContainer .content h3 {
+  color: #30fdff;
+  font-family: "Cherish", Sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+.aboutCardContainer .content span {
+  color: #ffffff;
+  font-family: "Montserrat Alternates", Sans-serif;
+  font-size: 43px;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+.aboutCardContainer .content p {
+  color: #c6c6c6;
+  font-family: "Work Sans", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6em;
+  padding-right: 15px;
+}
+.about_third {
+  flex-direction: row-reverse;
+  margin-top: 6rem;
+}
+
+.engine {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 0;
+  overflow: hidden;
+}
+.engine .card {
+  border: 2px solid #0ef;
+  overflow: hidden;
+  position: relative;
+  height: 30rem;
+}
+.engine .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.engine .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #09090bb5 0%, #30fdff 100%);
+  mix-blend-mode: color;
+  z-index: 1;
+  transition: 0.4s ease-in-out;
+}
+.engine .card:hover::before {
+  width: 100%;
+}
+.engine .card:hover img {
+  scale: 1.1;
+  opacity: 0.7;
+}
+.engine .card .text_content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+  padding: 0 15px;
+  transform: translateX(-100%);
+  transition: 0.6s ease-in-out;
+}
+.card .text_content h3 {
+  color: #ffffff;
+  font-family: "Montserrat Alternates", Sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.3em;
+  letter-spacing: 1.5px;
+}
+.card .text_content p {
+  color: #fff;
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 23px;
+}
+.engine .card:hover .text_content {
+  transform: translateX(0);
+}
+
+.tournament_container {
+  position: relative;
+}
+.tournament_container .bgLeftImage {
+  position: absolute;
+  top: 12%;
+  left: 0;
+  max-width: 150px;
+  max-height: 251px;
+  z-index: -1;
+}
+.bgLeftImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tournament_container .bgRightImage {
+  position: absolute;
+  bottom: 35%;
+  right: 0;
+  width: 170px;
+  max-height: 200px;
+  z-index: -1;
+}
+.tournament_container .bgRightImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tournament_container .tournament_count {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 3rem;
+}
+.tournament_container .tournament_count div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+}
+.tournament_container .tournament_count div span {
+  color: #30fdff;
+  font-family: "Montserrat Alternates", Sans-serif;
+  font-size: 62px;
+  font-weight: 600;
+}
+.tournament_container .tournament_count div p {
+  text-align: left;
+  color: #aeaeae;
+  font-family: "Work Sans", Sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* tournament section end */
+/* freegame section start */
+.freegameContainer {
+  background-image: url(/assets/images/free.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.freegame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 8rem 0;
+  position: relative;
+  z-index: 1;
+}
+.freegame::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  z-index: -1;
+  background-image: linear-gradient(180deg, #09090b 0%, #09090b 100%);
+}
+.freegame h3 {
+  text-align: center;
+  color: #30fdff;
+  font-family: "Cherish", Sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.2em;
+  z-index: 3;
+}
+.freegame h1 {
+  text-align: center;
+  color: white;
+  font-family: "Montserrat Alternates", Sans-serif;
+  font-size: 82px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: -1px;
+}
+.freegame span {
+  text-align: center;
+  color: #ffffff;
+  font-family: "DM Sans", Sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+
+.bargain_menu {
+  position: relative;
+  overflow: hidden;
+}
+.bargain_menu .bargain_bg_left {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  z-index: -1;
+  width: 16rem;
+  height: 22rem;
+}
+.bargain_menu .bargain_bg_left img {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bargain_menu .bargain_bg_right {
+  position: absolute;
+  bottom: 7%;
+  right: 0;
+  z-index: -1;
+  width: 12rem;
+  height: 22rem;
+}
+.bargain_menu .bargain_bg_right img {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bargain_menu .title {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 16px;
+}
+
+.bargain_menu .title h3 {
+  color: #30fdff;
+  font-family: "Cherish", Sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+.bargain_menu .title span {
+  color: #ffffff;
+  font-family: "Montserrat Alternates", Sans-serif;
+  font-size: 43px;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+.bargain_menu .title p {
+  color: #c6c6c6;
+  font-family: "Work Sans", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6em;
+  padding-right: 5rem;
+}
+.menu_container {
+  border: 2px solid #30fdff;
+  padding: 4rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+  overflow: hidden;
+}
+.menu_product .title {
+  color: #ffffff;
+  font-family: "Montserrat Alternates", Sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+}
+.menu_product .product-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.2rem;
+}
+.menu_product .product-item {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 2rem;
+  overflow: hidden;
+}
+.menu_product .product-item .image {
+  min-width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.menu_product .product-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.menu_product .product-item .image img:hover {
+  scale: 1.2;
+}
+.menu_product .product-item ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 1rem;
+}
+.menu_product .product-item ul li:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu_product .product-item ul li span {
+  color: #ffffff;
+  font-family: "Montserrat Alternates", Sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+.menu_product .product-item ul li p {
+  color: #c6c6c6;
+  font-family: "Work Sans", Sans-serif;
+  font-size: 16px;
+}
+
+.poster_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10rem 0;
+  overflow: hidden;
+}
+.poster_container .poster-item {
+  width: 100%;
+  max-height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+.poster-item::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1;
+  transition: 0.6s;
+}
+.poster-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.poster-item:hover img {
+  scale: 1.2;
+}
+.poster-item:hover::before {
+  background-color: #30fdff66;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 35px;
+  position: relative;
+}
+.BgImage {
+  position: absolute;
+  top: 9%;
+  left: 0;
+  max-width: 9rem;
+  max-height: 70%;
+  z-index: -1;
+}
+.BgImage img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.BgRightImage {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  width: 8rem;
+  height: 40%;
+  z-index: -1;
+}
+.BgRightImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.user .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.user .title h4 {
+  color: #30fdff;
+  font-family: "Cherish", sans-serif;
+  font-size: 42px;
+  line-height: 1.2em;
+  font-weight: 500;
+}
+
+.user .title span {
+  color: #ffffff;
+  font-family: "Montserrat Alternates", Sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.3em;
+}
+.CommentCardItem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.CommentCardItem .item {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #2d2d31 0%, #09090b 100%);
+  padding: 55px 45px;
+  position: relative;
+}
+.CommentCardItem .item .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.CommentCardItem .item .content .image {
+  width: 60px;
+  min-height: 50px;
+}
+.CommentCardItem .item .content .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.CommentCardItem .item .content p {
+  text-align: center;
+  color: #c6c6c6;
+  font-family: "Work Sans", Sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.CommentCardItem .item .content span {
+  color: #30fdff;
+  font-family: "Montserrat Alternates", Sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+}
+.CommentCardItem .item .rightIcons {
+  color: #30fdff;
+  font-size: 36px;
+  position: absolute;
+  bottom: 8%;
+  right: 6%;
+  transform: translate(-8%, -6%);
+}
+.CommentCardItem .item .leftIcons {
+  color: #30fdff;
+  font-size: 36px;
+  position: absolute;
+  top: 8%;
+  left: 6%;
+  transform: translate(-8%, -6%);
+}
+
+.OpeningLinks {
+  background-image: url(/assets/images/hollow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+.OpeningLinks::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  z-index: -1;
+  background-image: linear-gradient(180deg, #09090b 0%, #09090b 100%);
+}
+.OpeningLinks .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.OpeningLinks .title h3 {
+  color: #30fdff;
+  font-family: "Cherish", Sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+.OpeningLinks .title span {
+  color: #ffffff;
+  font-family: "Montserrat Alternates", Sans-serif;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: -1.5px;
+}
+.OpeningLinks .title p {
+  color: #c6c6c6;
+  font-family: "DM Sans", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+.OpeningLinks .content {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 55px;
+  margin-top: 6rem;
+}
+.OpeningLinks .content .map {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.OpeningLinks .content .map iframe {
+  object-fit: cover;
+  opacity: 0.9;
+  min-width: 100%;
+  height: 498px;
+  border: none;
+  outline: none;
+  cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;
+}
+.content .links {
+  border: 2px solid #30fdff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 35px;
+  padding: 30px;
+  flex: 1;
+  overflow: hidden;
+}
+.content .links .title {
+  color: #ffffff;
+  font-family: "Montserrat Alternates", Sans-serif;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+.content .links ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.content .links ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+.content .links ul li span {
+  font-family: "Work Sans", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+/* Style for the 'Watch Here' links */
+.watch-link {
+  border: 1px solid #30fdff;
+  box-shadow: 0px 4px 0px 0px rgba(148, 226, 255, 0);
+  padding: 10px 15px;
+  color: #30fdff;
+  font-size: 16px; 
+  font-weight: 600;
+  display: inline-block;
+  margin: 10px 0; 
+  position: relative;
+  z-index: 1;
+  border-radius: 4px; 
+}
+
+.watch-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #30fdff;
+  z-index: -1;
+  transition: 0.6s;
+}
+
+.watch-link:hover {
+  color: #000;
+}
+
+.watch-link:hover::before {
+  width: 100%;
+}
+
+
+
+
+.links ul li {
+  margin-bottom: 15px;
+}
+
+.links ul li span {
+  font-size: 16px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+
+footer {
+  border-top: 0.1px solid #272727;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5%;
+  overflow: hidden;
+}
+footer .content {
+  color: #9097aa;
+  font-size: 17px;
+  line-height: 1.7rem;
+  letter-spacing: 0.5px;
+}
+footer p {
+  color: #ffffff;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+@media (max-width:991px) {
+  .homeText {
+    width: 95%;
+    align-items: center;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+  }
+  .homeText h4 {
+    text-align: center;
+    font-size: 35px;
+    line-height: 1em;
+  }
+  .homeText h2 {
+    font-size: 52px;
+    text-align: center;
+  }
+  .homeText span {
+    text-align: center;
+  }
+  .count div:last-child {
+    padding-left: 30px;
+  }
+  .count div h2 {
+    font-size: 50px;
+  }
+  .count div p {
+    font-size: 10px;
+  }
+  .aboutCardContainer {
+    flex-direction: column;
+    gap: 45px;
+  }
+  .about_container .bgLeftImage {
+    top: 15%;
+    max-width: 200px;
+  }
+  .about_container .bgRightImage {
+    bottom: 6%;
+    width: 150px;
+  }
+  .aboutCardContainer .aboutImage {
+    flex: 1 1 100%;
+    width: 70%;
+    margin-right: 0;
+  }
+  .aboutImage .image {
+    width: 130%;
+    height: 80%;
+    object-fit: contain;
+  }
+  .aboutCardContainer .content {
+    flex: 1 1 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .aboutCardContainer .aboutImage {
+    margin-right: 0;
+  }
+  .aboutCardContainer .content h3 {
+    text-align: center;
+    font-size: 35px;
+  }
+  .aboutCardContainer .content span {
+    text-align: center;
+    font-size: 35px;
+    line-height: 1.4em;
+  }
+  .about_third {
+    margin-top: 1rem;
+  }
+  .about_third .content span {
+    font-size: 30px;
+  }
+  .aboutCardContainer .content p {
+    text-align: center;
+    font-size: 18px;
+    padding-right: 0;
+  }
+  .aboutCardContainer .content .btn {
+    text-align: center;
+  }
+  .engine {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .CommentCardItem {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bargain_menu .title {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bargain_menu .title h3 {
+    font-size: 45px;
+    text-align: center;
+  }
+  .bargain_menu .title span {
+    font-size: 43px;
+    text-align: center;
+  }
+  .bargain_menu .title p {
+    text-align: center;
+    padding: 0;
+  }
+  .menu_container {
+    padding: 1rem 1.1rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+  }
+  .menu_product .product-item {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width:768px) {
+  .engine {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tournament_container {
+    padding-top: 10rem;
+  }
+  .tournament_container .bgLeftImage {
+    top: 5%;
+    max-width: 100px;
+    max-height: 200px;
+  }
+  .tournament_container .bgRightImage {
+    bottom: 20%;
+    width: 170px;
+    max-height: 150px;
+  }
+  .CommentCardItem {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .user .title h4 {
+    text-align: center;
+  }
+  .user .title span {
+    text-align: center;
+  }
+  .OpeningLinks .title h3,
+  .OpeningLinks .title span,
+  .OpeningLinks .title p {
+    text-align: center;
+  }
+  .OpeningLinks .content {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+  }
+  .OpeningLinks .content .map {
+    flex: 1 1 100%;
+  }
+  .OpeningLinks .content .map iframe {
+    height: 400px;
+  }
+  .content .links {
+    padding: 20px;
+    width: 100%;
+  }
+  .content .links .title {
+    font-size: 35px;
+    text-align: center;
+  }
+  .content .links ul {
+    gap: 1.3rem;
+  }
+  footer {
+    flex-direction: column-reverse;
+    gap: 1.2rem;
+  }
+  footer .content {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .freegameContainer {
+    margin: 5rem 0;
+  }
+  .engine {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .freegame h3 {
+    font-size: 45px;
+  }
+  .freegame h1 {
+    font-size: 65px;
+  }
+  .freegame span {
+    font-size: 16px;
+  }
+  .poster_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .BgImage {
+    top: 0;
+  }
+  .BgImage img {
+    object-fit: contain;
+  }
+  .BgRightImage {
+    bottom: 0;
+  }
+  .BgRightImage img {
+    object-fit: contain;
+  }
+  .menu_product .product-item ul li span {
+    font-size: 16px;
+  }
+  .menu_product .product-item ul li p {
+    font-size: 14px;
+  }
+  .bargain_menu .bargain_bg_right {
+    bottom: 0;
+    width: 10rem;
+  }
+  .bargain_menu .bargain_bg_left {
+    top: 0;
+    width: 10rem;
+  }
+}
